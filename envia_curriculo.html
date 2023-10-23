@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila Rica Curriculos</title>
+
+    <link rel="stylesheet" href="css-novo/style_app.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+
+</head>
+
+<body class="fundoimg">
+    <script src="js/vilarica.js"></script>
+    <div class="content">
+
+
+        <aside>
+            <img class="iconelogo" src="assets/vila.png" alt="logo" srcset="">
+
+            <h1>Supermercados <span>Vila Rica</span></h1>
+        </aside>
+
+        <main class="form2pg2">
+            <header>
+                <a href="vilarica.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+
+                <h2><span>Envie</span> o seu <span>Curriculo</span>.</h2>
+            </header>
+
+
+            <form action="enviaCurriculo/processar_upload.php" method="post" enctype="multipart/form-data">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" required>
+                              
+                
+                <div>
+                    <br>
+                    <label for="arquivo">Selecione um arquivo:</label>
+                    <input type="file" name="arquivo" id="arquivo" required>
+                </div>
+
+                <div>
+                    <br>
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <button class="btn-envio" type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+            <footer>
+                <p class="fpg1">Enviar Arquivos em formato .PDF</p>
+            </footer>
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>

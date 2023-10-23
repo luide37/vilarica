@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Escritório</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="tabelas/css/style.css">
+
+	</head>
+
+	<!-- <script language="javascript">
+		function relatorioNobreak(){
+		  document.getElementById('janela').style.display='';
+			window.open('relatorios/teste.html', "iframejanela");
+	  }
+	</script> -->
+
+	<body>
+
+	<script src="js/js-tabelas/maq-aline.js"></script>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<a href="escritorio.html" class="btn btn-success">Voltar</a>
+					<h2 class="heading-section">Maquina Aline</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-striped">
+						  <thead>
+						    <tr>
+						      <th>Cod.Ativo</th>
+						      <th>Nome</th>
+						      <th>Loja</th>
+						      <th>Quant.Itens</th>
+						      <th>it.Em.Manutenção</th>
+						      <th>Situação</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">01</th>
+						      <td>Monitor</td>
+						      <td>02</td>
+						      <td>02</td>
+						      <td>não</td>
+						      <td><a  class="btn btn-success">Ok</a></td>
+							  <td><a  class="btn btn-warning" onclick="relatorioMonitor();">Relatorio</a></td></td>
+						    </tr>
+
+						    <tr>
+						      <th scope="row">02</th>
+						      <td>Cpu</td>
+						      <td>02</td>
+						      <td>01</td>
+						      <td>não</td>
+						      <!-- <td><a href="#" class="btn btn-warning">Entrar</a></td> -->
+							  <td><a  class="btn btn-success">Ok</a></td>
+							  <td><a  class="btn btn-warning" onclick="relatorioCpu();">Relatorio</a></td></td>
+						    </tr>
+
+						    <tr>
+						      <th scope="row">03</th>
+						      <td>Nobreak</td>
+						      <td>02</td>
+						      <td>01</td>
+						      <td>sim</td>
+						      <!-- <td><a href="#" class="btn btn-danger">Entrar</a></td> -->
+							  <td><a  class="btn btn-success">Ok</a></td>
+							  <td><a  class="btn btn-warning" onclick="relatorioNobreak();">Relatorio</a></td>
+						    </tr>
+
+							<tr>
+							 <td> <div id="janela" style="display: none; position: absolute;">
+									<iframe id="iframejanela" name="iframejanela" frameborder="3" 
+										style="height: 500px; width: 500px; border-radius: 3%; border-color: black;">
+									</iframe>
+								  </div>
+							 </td>
+							</tr>
+
+						    
+
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="tabelas/js/jquery.min.js"></script>
+  	<script src="tabelas/js/popper.js"></script>
+  	<script src="tabelas/js/bootstrap.min.js"></script>
+ 	<script src="tabelas/js/main.js"></script>
+
+	</body>
+</html>
+
